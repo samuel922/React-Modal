@@ -1,0 +1,80 @@
+.modalBackground {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(200, 200, 200);
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContainer {
+  width: 500px;
+  height: 500px;
+  border-radius: 12px;
+  box-shadow: 0px 3px 15px rgba(0,0,0,.35);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.modalCloseBtn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modalCloseBtn button {
+  font-size: 24px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.modalCloseBtn button:hover {
+  transform: rotateY('180deg');
+}
+
+.title {
+  display: inline-block;
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+
+.body {
+  flex: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.footer {
+  flex: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer button {
+  width: 150px;
+  height: 45px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  margin: 10px;
+  background-color: cornflowerblue;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.footer .cancelBtn {
+  background-color: tomato;
+
+}
+
+.footer .cancelBtn:hover {
+  background-color: #000;
+}
